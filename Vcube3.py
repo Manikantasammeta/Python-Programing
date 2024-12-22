@@ -45,14 +45,6 @@
 # #     while val>ord("Z"):
 # #         val-=26
 
-
-
-
-
-
-
-
-
 # n=5
 # val=ord("A")
 # for i in range(n):
