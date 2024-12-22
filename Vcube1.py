@@ -22,14 +22,6 @@
 # print(s2)
 
 
-
-
-
-
-
-
-
-
 #3.Checking The given Password is Strong or not
 
 # n=input()
