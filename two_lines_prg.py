@@ -4,6 +4,10 @@
 # n=int(input("enter a nuber: "))
 # print("prime" if (n%i!=0 for i in range(2,n)) and n>1 else "not aprime")      #prime in one line
 
+
+
+
+
 # l=[1,2,3,4,5]
 # print("unique" if len(l)==len(set(l)) else "not unique")              #checking unique of list
 
