@@ -1,0 +1,33 @@
+
+    <div class="container mt-5">
+    <div class="card-0" style="width: 18rem;" id="card">
+        <img src="https://static-00.iconduck.com/assets.00/student-yellow-emoji-1408x2048-ap89dk42.png" alt="profile" class="card-img-top" alt="Placeholder Image">
+        <div class="card-body" id="cardContent">
+            <h5 class="card-title">Name: mani</h5>
+            <h5 class="card-title">Role: python developer</h5>
+            <h5 class="card-title">Emp Id: VVCS-PY01</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        
+    </div>
+    <button class="btn btn-primary" id="downloadBtn">Download Card</button>
+</div>
+<script>
+    // Function to download the entire card content with image, styles, and background
+    document.getElementById('downloadBtn').addEventListener('click', function () {
+        const card = document.getElementById('card-{index}'); // Target the complete card
+        
+        // Use html2canvas to capture the entire card element
+        html2canvas(card, {
+            useCORS: true, // Ensure cross-origin images are included
+            scale: 2 // Improve the quality of the generated image
+        }).then(canvas => {
+            const link = document.createElement('a');
+            link.download = 'card_full.png'; // Set the download filename
+            link.href = canvas.toDataURL('image/png'); // Convert canvas to image
+            link.click(); // Trigger the download
+        });
+    });
+</script>
+<!-- Add html2canvas library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script> 
