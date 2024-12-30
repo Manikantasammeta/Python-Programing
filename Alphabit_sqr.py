@@ -561,22 +561,6 @@
 #     if val>ord("Z"):
 #         val=ord("A") 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # n:8
 # H i X y N o D e 
 # g J w Z m P c F 
