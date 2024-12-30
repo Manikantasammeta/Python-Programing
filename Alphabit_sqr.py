@@ -459,10 +459,6 @@
 # S R Q P O N M L K 
 
 
-
-
-
-
 # n=int(input("n:"))
 # for i in range(n):
 #     for j in range(n):
