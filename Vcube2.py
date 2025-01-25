@@ -133,10 +133,6 @@
 # print(s3)
 
 
-
-
-
-
 # S="we are in vcube sloutions we we we"   # COUNTING THE WORDS IN THE GIVEN SECNTENCE
 # s1=S.split()
 # print(s1)
