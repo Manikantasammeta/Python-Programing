@@ -91,10 +91,6 @@
 
 
 
-
-
-
-
 # marks = {
 #     "sai": {"m": 22, "s": 32},
 #     "mani": {"m": 26, "s": 33},
@@ -137,25 +133,25 @@
 # for i in s1:
 #     print(i,"=",s1.count(i))
 
-n=input("enter a value:")
-try:
-    v=int(n)
-    print(v,"is int ")
-except:
-    try:
-        v=float(n)
-        print(v,"is float")
-    except:
-        try:
-            v=complex(n)
-            print(v,"is a complex")
-        except:
-              try:
-                  v=bool(n)
-                  print(v,"is bool")
-              except:
-                  try:
-                    v=str(n)
-                    print(v,"is str data type")
-                  except:
-                      print("given is mixex data type")
+# n=input("enter a value:")
+# try:
+#     v=int(n)
+#     print(v,"is int ")
+# except:
+#     try:
+#         v=float(n)
+#         print(v,"is float")
+#     except:
+#         try:
+#             v=complex(n)
+#             print(v,"is a complex")
+#         except:
+#               try:
+#                   v=bool(n)
+#                   print(v,"is bool")
+#               except:
+#                   try:
+#                     v=str(n)
+#                     print(v,"is str data type")
+#                   except:
+#                       print("given is mixex data type")
