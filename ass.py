@@ -88,3 +88,35 @@
 
 
 #6.Convert 2 lists into a dictionary
+# n=5
+# for i in range(n):
+#     for j in range(n):
+#         if j<=i:
+#             print("*",end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print()
+
+# n=int(input("enter number: "))
+# s=0
+# for i in range(1,n+1):
+#     print(i)
+#     s=s+i
+# print(s)
+
+
+
+x=[20,4,10,40,15,14]
+s=0
+for i in range(len(x)):
+    if i%2==0:
+      s=s+x[i] 
+print(s) 
+
+
+
+
+
+
+
+
