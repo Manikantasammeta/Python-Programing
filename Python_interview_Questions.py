@@ -178,10 +178,6 @@
 # 176. Explain bitwise operators in Python?
 # 177. What is Generalization in Python?
 # 178. What is Specialization in Python?
-
-
-
-
 # 179. Why do we need OOPS?
 # 180. What is an interpreted language?
 # 181. What is the difference between .Py and .Pyc files?
