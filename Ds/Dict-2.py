@@ -138,3 +138,22 @@ D={'RAJU': {'Eng': 0, 'Phy': 90, 'Math': 46},
 # for i in s:
 #     output[i]=s.count(i)
 # print(output) {'hello': 2, 'world': 1, 'python': 3}
+
+        # Find how many “n” present in the given range numbers 
+        
+# start=100
+# end=130
+# n=3
+# output=0
+# for i in range(start,end+1):
+#     cnt=0
+#     while i !=0:
+#         ele=i%10
+#         if ele==n:
+#             cnt+=1
+#         i=i//10
+#     output+=cnt
+        
+# print(output)
+
+
