@@ -80,3 +80,33 @@
             
 
 
+D={'RAJU': {'Eng': 0, 'Phy': 90, 'Math': 46}, 
+ 'PINKY': {'Phy': 45, 'Eng': 65, 'Math': 0}, 
+ 'SITA': {'Math': 46, 'Eng': 50, 'Phy': 45}, 
+ 'MAHESH': {'Eng': 0, 'Phy': 19, 'Math': 99}}
+
+                # Difference between total marks of RAJU and SITA:
+# Raju=0
+# Sita=0
+# for name, scrs in D.items():
+#     for sub,mrk in scrs.items():
+#         if name=='RAJU':
+#             Raju=Raju+mrk
+#         elif name=='SITA':
+#             Sita=Sita+mrk
+# print('Markes of Raju',Raju)
+# print('Markes of Sita',Sita)
+# print(abs(Raju-Sita)) 
+
+
+
+        #Fins the Students Names and Subjects who are get Zero in any subject
+# Output={}       
+# for name,scrs in D.items():
+#     for sub,mrk in scrs.items():
+#         if mrk==0:
+#             Output[name]=sub
+# print(Output)
+
+# Output={'RAJU': 'Eng', 'PINKY': 'Math', 'MAHESH': 'Eng'}
+
