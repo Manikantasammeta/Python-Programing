@@ -100,7 +100,7 @@ D={'RAJU': {'Eng': 0, 'Phy': 90, 'Math': 46},
 
 
 
-        #Fins the Students Names and Subjects who are get Zero in any subject
+                 #Fins the Students Names and Subjects who are get Zero in any subject
 # Output={}       
 # for name,scrs in D.items():
 #     for sub,mrk in scrs.items():
@@ -110,3 +110,22 @@ D={'RAJU': {'Eng': 0, 'Phy': 90, 'Math': 46},
 
 # Output={'RAJU': 'Eng', 'PINKY': 'Math', 'MAHESH': 'Eng'}
 
+                     #Find the Ranks of the Students according to their Marks 
+                    
+# names=list(D.keys())
+# marks=[]
+# output={}
+
+# for name,scrs in D.items():
+#     m=0
+#     for sub,mrk in scrs.items():
+#         m+=mrk
+#     marks.append(m)
+# old=marks.copy()
+# marks.sort(reverse=True)
+# for i in range(len(marks)):
+#     idx=old.index(marks[i])
+#     output[i+1]=names[idx]
+# print(output)
+
+# Output:{1: 'SITA', 2: 'RAJU', 3: 'MAHESH', 4: 'PINKY'}
