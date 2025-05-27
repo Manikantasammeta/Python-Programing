@@ -207,3 +207,16 @@ D={'RAJU': {'Eng': 0, 'Phy': 90, 'Math': 46},
 # out["vowels"]=vowels
 # out["consonants"]=consonants
 # print(out) #{'vowels': 3, 'consonants': 7}
+
+
+            # Map each character in a string to a list of its positions (indices).
+# s="banana"
+# out = {}
+# for i in range(len(s)):
+#     if s[i] in out:
+#         out[s[i]].append(i)
+#     else:
+#         out[s[i]] = [i]
+# print(out)#{'b': [0], 'a': [1, 3, 5], 'n': [2, 4]}
+
+
