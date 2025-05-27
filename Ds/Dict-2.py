@@ -129,3 +129,12 @@ D={'RAJU': {'Eng': 0, 'Phy': 90, 'Math': 46},
 # print(output)
 
 # Output:{1: 'SITA', 2: 'RAJU', 3: 'MAHESH', 4: 'PINKY'}
+
+
+
+                # Write a program to count how many times each word appears in a sentence.
+# s="hello world hello python python python".split()
+# output={}
+# for i in s:
+#     output[i]=s.count(i)
+# print(output) {'hello': 2, 'world': 1, 'python': 3}
