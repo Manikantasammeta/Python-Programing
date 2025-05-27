@@ -220,3 +220,9 @@ D={'RAJU': {'Eng': 0, 'Phy': 90, 'Math': 46},
 # print(out)#{'b': [0], 'a': [1, 3, 5], 'n': [2, 4]}
 
 
+            # Map each word to a set of its unique characters.
+# s="hello world"
+# out={}
+# for i in s.split():
+#     out[i]=set(i)
+# print(out)# {'hello': {'e', 'l', 'h', 'o'}, 'world': {'o', 'd', 'w', 'l', 'r'}}
