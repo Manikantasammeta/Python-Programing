@@ -156,4 +156,37 @@ D={'RAJU': {'Eng': 0, 'Phy': 90, 'Math': 46},
         
 # print(output)
 
+        #Merge two dictionaries by adding the values of common keys.
 
+
+
+
+        #Group a list of words into anagrams using a dictionary.
+
+# l=["bat", "tab", "cat", "act", "tac"]
+# d={}
+# for i in l:
+#     key="".join(sorted(i))
+#     if key in d:
+#         d[key].append(i)
+#     else:
+#         d[key]=[i]
+# print(d){'abt': ['bat', 'tab'], 'act': ['cat', 'act', 'tac']}
+
+            # Given a dictionary where values can repeat, return a reverse dictionary where each value maps to a list of keys.
+# d={'a': 1, 'b': 2, 'c': 1}
+# d1={}
+# for key,value in d.items():
+#     if value in d1:
+#         d1[value].append(key)
+#     else:
+#         d1[value]=[key]
+# print(d1)#{1: ['a', 'c'], 2: ['b']}
+
+
+                #Convert a dictionary to a list of tuples and sort by keys in descending order.
+# Input={'x': 5, 'a': 10, 'm': 3}
+# out=[]
+# for key,value in Input.items():
+#     out.append((key,value))
+# print(out)   #[('x', 5), ('a', 10), ('m', 3)]
