@@ -190,3 +190,20 @@ D={'RAJU': {'Eng': 0, 'Phy': 90, 'Math': 46},
 # for key,value in Input.items():
 #     out.append((key,value))
 # print(out)   #[('x', 5), ('a', 10), ('m', 3)]
+ 
+ 
+ 
+            #Return a dictionary with the count of vowels and consonants in a string.
+# s="hello world"
+# out={}
+# vowels=0
+# consonants=0
+# for i in s:
+    
+#     if i in "aeiou":
+#         vowels+=1
+#     elif i in "bcdfghjklmnpqrstvwxyz":
+#         consonants+=1
+# out["vowels"]=vowels
+# out["consonants"]=consonants
+# print(out) #{'vowels': 3, 'consonants': 7}
