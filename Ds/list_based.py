@@ -192,11 +192,6 @@
 # ot-->[30, 'Qy', 50, 80, 30, 'jy', 20, 90, 60, 'py', 10]
 
 
-
-
-
-
-
 # l=[30,"Py",50,80,30,"Jy",20,90,60,"Qy",10]
 # for i in range(len(l)-1):                                       #sorting only strings in list
 #         for j in range(i+1,len(l)):

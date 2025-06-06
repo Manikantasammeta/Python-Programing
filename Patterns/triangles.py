@@ -334,6 +334,31 @@
 #   A B C D C B A 
 # A B C D E D C B A
 
+# n=5
+# v=ord("A")
+# for i in range((2*n)-1):
+#     for j in range((2*n)-1):
+#         if i+j>=n-1 and j-i<=n-1 and i-j<=n-1 and i + j <= (3 * n) - 3:
+            
+#             print(chr(v),end=" ")
+#             v=v+1 if j<n-1 else v-1 
+            
+#         else:
+#             print(" ",end=" ")
+            
+#     print( )
+#     v=65
+
+#         A         
+#       A B A       
+#     A B C B A     
+#   A B C D C B A   
+# A B C D E D C B A 
+#   A B C D C B A   
+#     A B C B A     
+#       A B A       
+#         A 
+
 # n=int(input("n:"))
 # for i in range(n):
 #     val=ord("A")

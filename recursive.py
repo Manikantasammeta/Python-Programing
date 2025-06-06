@@ -63,6 +63,9 @@
 # prime_numbers(int(input("enter a  number :")))
 
 
+
+
+
 # enter a  number :5
 # 2 3 5 7 11 
 # def fact(n,i=1):                  # factorial of a given number with using recursive function

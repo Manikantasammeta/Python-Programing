@@ -151,7 +151,7 @@
 
 
 
-# d={'b': 3, 'a': 2, 'c': 1}            # sorting the dict with SORT METHOD IN LIST  Desc
+# d={'b': 3, 'a': 2, 'c': 1}            # sorting the dict with out SORT METHOD IN LIST  Desc
 # d1={}                                  # by VALS
 # val = list(d.values())
 # val.sort(reverse=True)
@@ -377,15 +377,17 @@
 #     print(avg//3)
 
 
-d={"a":{"d":20,"c":{"e":None},"f":{"g":20,"h":None}},"i":{"j":None,"k":{"l":30,"m":None}}}
+# d={"a":{"d":20,"c":{"e":None},"f":{"g":20,"h":None}},"i":{"j":None,"k":{"l":30,"m":None}}}
 
-def fun(d1):
+# def fun(d1):
     
-    for k,v in d1.items():
-        if type(v)==dict:
-            fun(v)
-        if v==None:
-            print(k)                    
+#     for k,v in d1.items():
+#         if type(v)==dict:
+#             fun(v)
+#         if v==None:
+#             print(k)                    
                      
-fun(d)
+# fun(d)
+                            
+                            
                             
