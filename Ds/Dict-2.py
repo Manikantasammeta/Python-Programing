@@ -184,6 +184,9 @@ D={'RAJU': {'Eng': 0, 'Phy': 90, 'Math': 46},
 
 
 
+
+
+
 #     else:
 #         d1[value]=[key]
 # print(d1)#{1: ['a', 'c'], 2: ['b']}
