@@ -174,15 +174,15 @@
 # print(res) 
 
 
-x=[1,2,3,[4,5],[6,7,8],9]
+# x=[1,2,3,[4,5],[6,7,8],9]
 
-def fun(x,l=[]):
+# def fun(x,l=[]):
 
-    for i in x:
-        if type(i)==list:
-            fun(i)
-        else:
-            l+=[i]
-    return l
-print(fun(x))
+#     for i in x:
+#         if type(i)==list:
+#             fun(i)
+#         else:
+#             l+=[i]
+#     return l
+# print(fun(x))
             
