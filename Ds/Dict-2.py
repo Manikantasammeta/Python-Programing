@@ -179,14 +179,6 @@ D={'RAJU': {'Eng': 0, 'Phy': 90, 'Math': 46},
 # for key,value in d.items():
 #     if value in d1:
 #         d1[value].append(key)
-
-
-
-
-
-
-
-
 #     else:
 #         d1[value]=[key]
 # print(d1)#{1: ['a', 'c'], 2: ['b']}
