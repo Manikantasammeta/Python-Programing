@@ -674,3 +674,36 @@
 # D D D 
 # 4 4 4 4 
 # C C C C C 
+
+
+# n=5
+# num=1
+# val=ord("A")
+# for i in range((2*n)-1):
+#     for j in range((2*n)-1):
+#         if (i+j>=n-1 and j-i<=n-1 and i-j<=n-1 and i + j <= 3*n - 3):
+#             if i%2==0:
+#                 print(num,end=" ")
+#                 num=num+1 if j<=n-2 else num-1
+                
+#             else:
+#                 print(chr(val),end=" ")
+#                 val=val+1 if j<=n-2 else val-1
+                
+            
+#         else:
+#             print(" ",end=" ")
+#     print()
+#     num=1
+#     val=ord("A")      
+
+
+#         1         
+#       A B A       
+#     1 2 3 2 1     
+#   A B C D C B A   
+# 1 2 3 4 5 4 3 2 1 
+#   A B C D C B A   
+#     1 2 3 2 1     
+#       A B A       
+#         1  

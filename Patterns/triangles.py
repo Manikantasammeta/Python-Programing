@@ -168,6 +168,14 @@
 #       val1=ord("a")
 #   n-=1
 #   print()
+  
+#   enter :5
+# A  b  C  d  E  
+# E  f  G  h
+# I  j  K
+# K  l  
+# M
+  
 
 # n=int(input("enter :"))
 # val=ord("A")
@@ -482,9 +490,3 @@
 
 
 
-i=1
-while i<=10:
-    if i==5:
-        continue
-    print(i)
-    i+=1
