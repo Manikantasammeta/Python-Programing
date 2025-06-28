@@ -553,7 +553,6 @@
     
    
    
-   
         
 # n=int(input("enter num :"))
 # for i in range(n):
@@ -580,6 +579,8 @@
 #         else:
 #             print(" ",end=" ")
 #     print()
+
+
 # # n=5
 # * * * * * * * * * 
 #   *           *   
@@ -608,3 +609,30 @@
 #             print("H",end=" ")
 #         else: print(" ",end=" ")
 #     print()
+    
+    
+#       H
+#       H H H       
+#     H H H H H
+#   H H H H H H H
+# H H H H H H H H H
+#    H H H H H H                     H H H H H H
+#    H H H H H H                     H H H H H H
+#    H H H H H H                     H H H H H H
+#    H H H H H H                     H H H H H H
+#    H H H H H H                     H H H H H H
+#    H H H H H H                     H H H H H H
+#        H H H H H H H H H H H H H H H H H H
+#        H H H H H H H H H H H H H H H H H H
+#        H H H H H H H H H H H H H H H H H H
+#    H H H H H H                     H H H H H H
+#    H H H H H H                     H H H H H H
+#    H H H H H H                     H H H H H H
+#    H H H H H H                     H H H H H H
+#    H H H H H H                     H H H H H H
+#    H H H H H H                     H H H H H H
+# H H H H H H H H H
+#   H H H H H H H
+#     H H H H H
+#       H H H
+#         H
