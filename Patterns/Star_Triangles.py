@@ -563,6 +563,13 @@
 #         else:
 #             print(" ",end=" ")
 #     print()
+    
+# enter num :5
+#         *
+#       *   *
+#     *       *
+#   *           *
+# * * * * * * * * *
 
 
 # n=int(input("enter num :"))
@@ -573,48 +580,31 @@
 #         else:
 #             print(" ",end=" ")
 #     print()
-
-
-# class Quadrilateral:
-#     def __init__(self,name,height,Base):
-#         self.name =name
-#         self.height =height
-#         self.width =Base
-#     def CalculateArea(self,Base,height):
-#         Area = Base *height
-        
-        
-# class Trapezoid(Quadrilateral):
-#     def CalculateArea(self):
-#         print(self.name)
-#         print((self.height+self.width)/2*self.height)
-    
-    
-# class Rectangle(Quadrilateral):
-#     def CalculateArea(self):
-#         print(self.name)
-#         print(self.height*self.width)
-
-# t=Trapezoid()
+# # n=5
+# * * * * * * * * * 
+#   *           *   
+#     *       *
+#       *   *
+#         *
 
 
 
-n=5
-for i in  range(n):
-    for j in range(n+n-1):
-        if i+j>=n-1 and j-i<=n-1:
-            print("H",end=" ")
-        else: print(" ",end=" ")
-    print()
-for i in range(n+1):
-    print("""   H H H H H H                     H H H H H H""")
-for i in range(n//2+1):
-    print("""       H H H H H H H H H H H H H H H H H H """)
-for i in range(n+1):
-    print("""   H H H H H H                     H H H H H H""")
-for i in  range(n):
-    for j in range(n+n-1):
-        if i<=j and j+i<=2*n-2: 
-            print("H",end=" ")
-        else: print(" ",end=" ")
-    print()
+# n=5
+# for i in  range(n):
+#     for j in range(n+n-1):
+#         if i+j>=n-1 and j-i<=n-1:
+#             print("H",end=" ")
+#         else: print(" ",end=" ")
+#     print()
+# for i in range(n+1):
+#     print("""   H H H H H H                     H H H H H H""")
+# for i in range(n//2+1):
+#     print("""       H H H H H H H H H H H H H H H H H H """)
+# for i in range(n+1):
+#     print("""   H H H H H H                     H H H H H H""")
+# for i in  range(n):
+#     for j in range(n+n-1):
+#         if i<=j and j+i<=2*n-2: 
+#             print("H",end=" ")
+#         else: print(" ",end=" ")
+#     print()
