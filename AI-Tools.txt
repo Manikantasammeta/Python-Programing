@@ -1,0 +1,33 @@
+1. hf.co/spaces (Hugging Face Spaces):
+        Used for trying ML models online or hosting your own using Gradio or Streamlit.
+
+2. Napkin AI:
+         Used for prototyping AI apps super fast using natural language.
+
+3.Vercel & Netlify:
+        Used for hosting front-end apps, AI tools, portfolios, or dashboards with instant deployment and global CDN.
+
+4.Loveable.dev
+         Used as a personal AI code reviewer or mentor to improve your development skills.
+
+5. Grok (by xAI / Elon Musk);
+        Used for chatting, Q&A, and engaging in witty conversations — like ChatGPT but with attitude.
+
+6.Bolt AI:
+         Used for AI assistance on Mac across apps like Slack, Chrome, or VS Code.
+    
+7.Emily:
+        Used for email writing automation and saving time in communication.
+    
+8.Notebook LM (by Google):
+        Used for summarizing, answering questions, and organizing knowledge from your personal content.
+
+9. Claude (by Anthropic);
+        Used for writing, reasoning, summarizing, coding, and general conversations.
+
+10.Genspark:
+        Used by writers, game designers, and creatives for AI-driven storytelling.
+    
+11.Gama
+        Used for startup decks, business pitches, or school presentations using AI design.
+

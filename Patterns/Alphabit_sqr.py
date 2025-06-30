@@ -39,16 +39,15 @@
 # n=int(input("n :"))
 # val=ord("A")
 # for i in range(n):
+#     temp=val
 #     for j in range(n):
 #         print(chr(val),end=" ")
 #         val+=1
 #         if val>ord("Z"): val=ord("A")
-#     val-=4
+#     val=temp+1
 #     print()
 
-
-#     n :5
-
+# n :5
 # A B C D E 
 # B C D E F 
 # C D E F G 
@@ -284,8 +283,24 @@
 # d J p V b H 
 # E k Q w C i 
 # f L r X d J    
-     
 
+# n=int(input("n :"))
+# val=ord("A")
+# for i in range(n):
+#     temp=val
+#     for j in range(n):
+#         print(chr(val),end=" ")
+#         val= val+n  
+#     val=temp+1 
+#     print()
+    
+# n :5
+# A F K P U 
+# B G L Q V
+# C H M R W
+# D I N S X
+# E J O T Y 
+   
 
 # n=int(input("n :"))
 # val=ord("A")+n-1
@@ -316,6 +331,23 @@
 # t S r Q p 
 # Y x W v U 
 
+
+# n=int(input("n :"))
+# val=ord("A")+n-1
+# for i in range(n):
+#     temp=val
+#     for j in range(n):
+#         print(chr(val),end=" ")
+#         val=val-1
+#     val=temp+n
+#     print()
+# n :5
+# E D C B A 
+# J I H G F
+# O N M L K
+# T S R Q P
+# Y X W V U
+    
 
 # n=int(input("n:"))
 # val=ord("A")
