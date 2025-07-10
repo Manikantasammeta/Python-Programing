@@ -333,8 +333,6 @@
 #         else:
 #             print(" ",end=" ")
 #     print()
-
-
 # n:5
 #         A 
 #       A B A 
