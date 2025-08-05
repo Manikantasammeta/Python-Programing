@@ -6,23 +6,23 @@
 #                THE RESPECTIVE OUTPUT WILL BE DISPLAYED AT THE BOTTOM OF THE CODE. CHECK IT ONCE.
 
 
-# n=int(input("enter :"))
-# val=ord("Z")
-# val1=ord("y") 
-# for i in range(n):
-#   for j in range(n):
-#     if j%2==0:
-#      print(chr(val),end="   ")
-#     else:
-#         print(chr(val1),end="   ")
-#         val1-=2
-#         val-=2
-#     if val<ord("A"):
-#         val=ord("Z")
-#     if val1<ord("a"):
-#         val1=ord("y")
+n=int(input("enter :"))
+val=ord("Z")
+val1=ord("y") 
+for i in range(n):
+  for j in range(n):
+    if j%2==0:
+     print(chr(val),end="   ")
+    else:
+        print(chr(val1),end="   ")
+        val1-=2
+        val-=2
+    if val<ord("A"):
+        val=ord("Z")
+    if val1<ord("a"):
+        val1=ord("y")
         
-#   print()
+  print()
 
 
 # n:9
