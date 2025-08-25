@@ -484,9 +484,32 @@
 #         else:
 #             print(" ",end=" ")
 #     print()
+
 #     t+=1
 
 
+# n=5
+# val=ord("A")
+# v1=1
+# t=0
+# a=True
+# for i in range(n*2-1-t):
+#     for j in range(n):
+#         if i>=j and i+j<=2*n-2:
+#             if i%2==0:
+#                 print(v1 if a else chr(val),end=" ")
+#                 v1=v1+1 if j<n-1 else v1-1
+#             else:
+#                 print(chr(val) if not(a) else v1,end=" ")
+#                 val=val+1 if j<n-1 else val-1
+#             a=not(a)
+#             if j==n-4 and a: v1=v1-1
+#             elif j==n-4 and not(a):val=val-1
+#         else:
+#             print(" ",end=" ")
+#     print()
+
+#     t+=1
 
     
     
