@@ -417,6 +417,13 @@
 #             print(" ",end=" ")
 #     print()
 
+
+
+
+
+
+
+
 # n:9
 # 1 A 2 B 3 C 4 D 5 D 4 C 3 B 2 A 1 
 #   1 A 2 B 3 C 4 D 4 C 3 B 2 A 1 
