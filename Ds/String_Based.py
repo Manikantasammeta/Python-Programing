@@ -511,6 +511,9 @@ for i in range(rows + 1):              # one loop only
         print(" " * (rows - i) + out[2*i - 1] + " " * (2*i - 1) + out[2*i])
     else:                              # bottom
         print(out[-1])
+        
+        
+        
 
 
 
