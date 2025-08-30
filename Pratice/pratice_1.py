@@ -30,3 +30,14 @@ def longest_unique_substring(s):
 
 print(longest_unique_substring("abcabcbb"))  # Output: 3
 print(longest_unique_substring("bbbbb"))     # Output: 1
+
+
+def majority_element(nums):
+    count, candidate = 0, None
+    for num in nums:
+        if count == 0:
+            candidate = num
+        count += (1 if num == candidate else -1)
+    return candidate
+
+print(majority_element([3,3,4,2,3,3,5]))  # Output: 3
