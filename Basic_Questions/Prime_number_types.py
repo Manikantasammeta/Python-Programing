@@ -15,3 +15,12 @@ else:
     print(n,"not a prime number")
     
     
+# By using for loop 
+
+n=5 
+for i in range(2,n):
+    if n%i==0:
+        print(n,"not a Prime number")
+        break
+else:
+    print(n,"is a Prime number ")
