@@ -15,7 +15,7 @@ else:
     print(n,"not a prime number")
     
     
-# By using for loop 
+# - By using for loop 
 
 n=5 
 for i in range(2,n):
