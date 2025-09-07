@@ -64,3 +64,12 @@ for i in range(starting_range,ending_range):
     
 # Nth Prime number  that meance n=2 we need to find the 2nd prime number that is 3
 n=3 # output=5 , that is prime numbers start from 2, 3, 5, 7, ., ., .... so 2nd prime number is 3
+p_cnt=0
+i=2
+while True :
+    if check_prime(i):
+        p_cnt+=1
+    if p_cnt ==n:
+        print(n,"th prime number is ",i)
+        break
+    i+=1
