@@ -61,3 +61,6 @@ for i in range(starting_range,ending_range):
         print(i,"is a Prime number")
     
     
+    
+# Nth Prime number  that meance n=2 we need to find the 2nd prime number that is 3
+n=3 # output=5 , that is prime numbers start from 2, 3, 5, 7, ., ., .... so 2nd prime number is 3
