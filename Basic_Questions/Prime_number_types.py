@@ -28,12 +28,26 @@ else:
 
 # By useing functions 
 
-def check_prime_(n):
+def check_prime(n):
     for i in range(2,(n//2)+1):
         if n%i==0:
             return False
     else:
         return True
+    
+    
+# prime numbers between range 
+
+starting_range =2   # or else use can take any user input here like  int(input("Enter the starting range"))
+ending_range=199    # or else use can take any user input here like  int(input("Enter the ending range"))
+
+for i in range(starting_range,ending_range+1):
+    if check_prime(i):
+        print(i,"is a prime number")
+    else:
+        print(i,"is not a Prime number")
+        
+
 
     
     
