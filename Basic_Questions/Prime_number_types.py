@@ -48,6 +48,16 @@ for i in range(starting_range,ending_range+1):
         print(i,"is not a Prime number")
         
 
+# with out using functions 
 
+starting_range =2
+ending_range=199
+
+for i in range(starting_range,ending_range):
+    for j in range(2,(i//2)+1):
+        if i%j==0:
+            break
+    else:
+        print(i,"is a Prime number")
     
     
