@@ -73,3 +73,6 @@ while True :
         print(n,"th prime number is ",i)
         break
     i+=1
+    
+    
+    
