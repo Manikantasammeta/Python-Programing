@@ -24,3 +24,9 @@ for i in range(2,n):
         break
 else:
     print(n,"is a Prime number ")
+    
+
+# By useing functions 
+
+    
+    
