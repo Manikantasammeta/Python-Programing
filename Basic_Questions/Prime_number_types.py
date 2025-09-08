@@ -75,4 +75,4 @@ while True :
     i+=1
     
     
-    
+# with out using the fuctions
