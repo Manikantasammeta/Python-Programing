@@ -1,35 +1,19 @@
-def longest_unique_substring(s):
-    seen = {}
-    left = 0
-    max_len = 0
-    
-    for right, ch in enumerate(s):
-        if ch in seen and seen[ch] >= left:
-            left = seen[ch] + 1
-        seen[ch] = right
-        max_len = max(max_len, right - left + 1)
-    
-    return max_len
+import math, random as rm
 
-print(longest_unique_substring("abcabcbb"))  # Output: 3
-print(longest_unique_substring("bbbbb"))     # Output: 1
+def sud_str(string, out=None):
+    if out is None:
+        out = []
+    if len(out) <= math.factorial(len(string)):
+        ln = rm.randint(1, len(string))
+        s = []
+        for i in range(ln):
+            char = string[rm.randint(0, len(string) - 1)]
+            if char not in s:
+                s.append(char)
+        substr = "".join(s)
+        if substr not in out:
+            out.append(substr)
+        sud_str(string, out)
+    return out
 
-
-def longest_unique_substring(s):
-    seen = {}
-    left = 0
-    max_len = 0
-    
-    for right, ch in enumerate(s):
-        if ch in seen and seen[ch] >= left:
-            left = seen[ch] + 1
-        seen[ch] = right
-        max_len = max(max_len, right - left + 1)
-    
-    return max_len
-
-print(longest_unique_substring("abcabcbb"))  # Output: 3
-print(longest_unique_substring("bbbbb"))     # Output: 1
-
-
-
+print(sud_str("123"))
