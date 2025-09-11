@@ -14,6 +14,9 @@ def sud_str(string, out=None):
         if substr not in out:
             out.append(substr)
         sud_str(string, out)
+
+
+
     return out
 
 print(sud_str("123"))
