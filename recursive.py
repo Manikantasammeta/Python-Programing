@@ -207,6 +207,6 @@ def reversr_str(s,s1=""):
 print(reversr_str("mani"))
 
 
-input_list=[[1,2],[3,4],[5,6],[7,8]]
-list_comp=[j  for i in input_list for j in i]
-print(list_comp)  #[1, 2, 3, 4, 5, 6, 7, 8]
+
+
+
