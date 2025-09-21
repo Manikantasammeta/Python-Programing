@@ -13,23 +13,3 @@ print(list_comp)  #[1, 2, 3, 4, 5, 6, 7, 8]
 
 
 
-
-
-s="abc13ef5"
-s1=""
-status=False
-num=""
-strr=""
-for i in s:
-    if i.isdigit():
-        num+=i
-        status=True
-    elif i.isalpha():
-        if status==True:
-            s1=strr*int(num)
-            strr=""
-            num=""
-            status=False
-        strr+=i
-s1+=strr*int(num)    
-print(s1)
