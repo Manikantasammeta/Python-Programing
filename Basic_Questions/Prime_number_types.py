@@ -75,4 +75,14 @@ while True :
     i+=1
     
     
-# with out using the fuctions
+# Prime Factors of a given number 
+n=10 
+i=1
+while i<=n:
+    if n%i==0:
+        for j in range(2,i//2):
+            if i%j==0:
+                break
+        else:
+            print(i)
+    i+=1
