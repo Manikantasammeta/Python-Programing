@@ -32,6 +32,8 @@ print(longest_unique_substring("abcabcbb"))  # Output: 3
 print(longest_unique_substring("bbbbb"))     # Output: 1
 
 
+
+
 def majority_element(nums):
     count, candidate = 0, None
     for num in nums:
