@@ -43,3 +43,18 @@ def majority_element(nums):
     return candidate
 
 print(majority_element([3,3,4,2,3,3,5]))  # Output: 3
+
+
+
+
+# Prime Factors of a given number 
+n=10 
+i=1
+while i<=n:
+    if n%i==0:
+        for j in range(2,i//2):
+            if i%j==0:
+                break
+        else:
+            print(i)
+    i+=1
