@@ -737,3 +737,30 @@ for i in range(n):
 #     1 2 3 2 1     
 #       A B A       
 #         1  
+
+
+
+
+
+# n=int(input("n:"))
+# val=ord("A")+(n-1)
+# m=n
+# for i in range(n):
+#     a=val
+#     for j in range(i+1):
+#             if i%2==0:
+#                 print(chr(val),end=" ")
+#             else:
+#                 print(m,end=" ")    
+#     print()
+#     if i%2==0:
+#         val-=1
+#     else:
+#         m-=1
+
+# n:5
+# E 
+# 5 5 
+# D D D 
+# 4 4 4 4 
+# C C C C C
