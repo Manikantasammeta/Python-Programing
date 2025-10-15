@@ -198,13 +198,13 @@
 
 
 
-def reversr_str(s,s1=""):
-    if len(s)!=0:
-        temp=s[0]
-        return reversr_str(s=s[1:],s1=temp+s1)
-    return s1
+# def reversr_str(s,s1=""):
+#     if len(s)!=0:
+#         temp=s[0]
+#         return reversr_str(s=s[1:],s1=temp+s1)
+#     return s1
         
-print(reversr_str("mani"))
+# print(reversr_str("mani"))
 
 
 
