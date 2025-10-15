@@ -187,14 +187,14 @@
 # print(fun(x))
             
 
-def feb_series(n,a=0,b=1):
-    if a==0:
-        print(a,b,end=" ")
-    if n!=2:
-        c=a+b
-        print(c,end=" ")
-        feb_series(a=b,b=c,n=n-1)
-feb_series(7)
+# def feb_series(n,a=0,b=1):
+#     if a==0:
+#         print(a,b,end=" ")
+#     if n!=2:
+#         c=a+b
+#         print(c,end=" ")
+#         feb_series(a=b,b=c,n=n-1)
+# feb_series(7)
 
 
 
