@@ -174,17 +174,17 @@
 
 
 
-# s="i am mani"
-# s1=""
-# s3=""
-# for i in s:
-#     if i!=" ":
-#         s3=i+s3
-#     else:
-#         s1+=s3+i
-#         s3=""
-# else: s1+=s3
-# print(s1)
+s="i am mani"
+s1=""
+s3=""
+for i in s:
+    if i!=" ":
+        s3=i+s3
+    else:
+        s1+=s3+i
+        s3=""
+else: s1+=s3
+print(s1)
 
 
 
