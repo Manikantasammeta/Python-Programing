@@ -266,14 +266,14 @@
 # spiderman is a super hero
 
 
-# s=input("enter str:")
-# # print(s)
-# k=list(s.split())
-# j=k[0]                                                           # fetching the longest word from the sentence
-# for i in k:
-#     if len(i)>len(j):
-#         j=i
-# print(j)
+s=input("enter str:")
+# print(s)
+k=list(s.split())
+j=k[0]                                                           # fetching the longest word from the sentence
+for i in k:
+    if len(i)>len(j):
+        j=i
+print(j)
 
 # enter str:i am mani
 # mani
