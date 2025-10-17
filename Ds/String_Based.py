@@ -490,17 +490,17 @@
 # print(l)
 # output:['abc', 'bac', 'bca', 'cab', 'cba', 'acb']
 
-# s="Welcome to Argano".replace(" ", "")
-# #output="WeelcoomtAargn"
-# out=""
-# for i in range(len(s)):
-#     for j in range(i+1,len(s)):
-#         if s[i].lower()==s[j].lower() and s[i] not in out:
-#             out=out+s[i]+s[j]
-#             break
-#     else:
-#         if s[i]not in out:
-#             out=out+s[i]
+s="Welcome to Argano".replace(" ", "")
+#output="WeelcoomtAargn"
+out=""
+for i in range(len(s)):
+    for j in range(i+1,len(s)):
+        if s[i].lower()==s[j].lower() and s[i] not in out:
+            out=out+s[i]+s[j]
+            break
+    else:
+        if s[i]not in out:
+            out=out+s[i]
 
 # n = len(out)
 # rows = n // 2
