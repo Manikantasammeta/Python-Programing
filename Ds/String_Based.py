@@ -403,16 +403,16 @@
 # print(mtr(s,n1))
 
 
-# s=input("enter string")
-# n1=int(input("enter range:"))
-# s1=""
-# c=0
-# for i in range(len(s)):
-#     if c>n1-1:
-#         s1=s1+"\n"
-#         c=0
-#     s1=s1+s[i]
-#     c+=1
+s=input("enter string")
+n1=int(input("enter range:"))
+s1=""
+c=0
+for i in range(len(s)):
+    if c>n1-1:
+        s1=s1+"\n"
+        c=0
+    s1=s1+s[i]
+    c+=1
 
 # print(s1)
     
