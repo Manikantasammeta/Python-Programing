@@ -381,14 +381,14 @@
 # print(d.co())
 
 
-# s="mmmaaaanni"
-# s1=set(s)
-# s2=list(s1)
-# s2.sort()
-# for i in s2:
-#     d=s.count(i)
-#     if d>=2:
-#         print(i,d)
+s="mmmaaaanni"
+s1=set(s)
+s2=list(s1)
+s2.sort()
+for i in s2:
+    d=s.count(i)
+    if d>=2:
+        print(i,d)
 
 
 # def mtr(sr,num):
