@@ -316,13 +316,13 @@
 
 
 
-# s="manimai"
-# l1=[]
-# for i in s:
-#     if i not in l1:
-#         l1.append(i)                      #unique values of given str in sorted order
-# l1.sort()
-# print(*l1)
+s="manimai"
+l1=[]
+for i in s:
+    if i not in l1:
+        l1.append(i)                      #unique values of given str in sorted order
+l1.sort()
+print(*l1)
 
 # ot-->
 # a i m n
