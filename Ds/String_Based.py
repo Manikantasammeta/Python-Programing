@@ -466,15 +466,15 @@
 # print(number_to_words(number))
  
  
-# import random as rm               # Finding the Possibul Combinations Based on the given String
-# s=input("enter: ")
-# l=[]
-# l1=len(s)
-# fac=1
+import random as rm               # Finding the Possibul Combinations Based on the given String
+s=input("enter: ")
+l=[]
+l1=len(s)
+fac=1
 
-# while l1!=0:
-#     fac=l1*fac
-#     l1-=1
+while l1!=0:
+    fac=l1*fac
+    l1-=1
 
 
 
