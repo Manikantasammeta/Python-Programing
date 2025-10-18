@@ -68,13 +68,13 @@
 
 
 
-# n=input("enter str :")
-# o=0
-# for i in range(len(n)):
-#     if n[i] in "AEIOUaeiou":                                     # counting the number of ovels in goven string
-#         o+=1
-#         # print(n[i],end=" ")
-# print(o)
+n=input("enter str :")
+o=0
+for i in range(len(n)):
+    if n[i] in "AEIOUaeiou":                                     # counting the number of ovels in goven string
+        o+=1
+        # print(n[i],end=" ")
+print(o)
 
 
 # enter str :mani kanta reddy sammeta
@@ -103,24 +103,24 @@
 
 
 
-# n=input("enter str:")
-# sc=False
-# ul=False
-# up=False
-# num=False
-# for i in n:
-#     if "a"<=i<="z":                                         # Checking the string is valid ro not
-#         ul=True
-#     elif "A"<=i<="Z":
-#         up=True
-#     elif "0"<=i<="9":
-#         num=True
-#     else:
-#         sc=True
-# if len(n)>8 and sc and ul and up and num:
-#     print("valid")
-# else:
-#     print("not valid")
+n=input("enter str:")
+sc=False
+ul=False
+up=False
+num=False
+for i in n:
+    if "a"<=i<="z":                                         # Checking the string is valid ro not
+        ul=True
+    elif "A"<=i<="Z":
+        up=True
+    elif "0"<=i<="9":
+        num=True
+    else:
+        sc=True
+if len(n)>8 and sc and ul and up and num:
+    print("valid")
+else:
+    print("not valid")
 
 
 # enter str:Manireddy@123
