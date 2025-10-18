@@ -30,15 +30,15 @@
 
 
 
-# s=input("Enter Str :")
-# Captial_letters=[]
-# Small_Letters=[]
-# for i in s:
-#     if ord(i)<ord("Z"):
-#         Captial_letters.append(i)
-#     else: Small_Letters.append(i)                                  #saperating the capital and small values for user
-# print("Captial_letters :",*Captial_letters)
-# print("Small_Letters :",*Small_Letters)
+s=input("Enter Str :")
+Captial_letters=[]
+Small_Letters=[]
+for i in s:
+    if ord(i)<ord("Z"):
+        Captial_letters.append(i)
+    else: Small_Letters.append(i)                                  #saperating the capital and small values for user
+print("Captial_letters :",*Captial_letters)
+print("Small_Letters :",*Small_Letters)
 
 #           out put :
 
