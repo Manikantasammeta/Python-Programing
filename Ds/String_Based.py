@@ -156,14 +156,14 @@ print(s2)
 
 
 
-# s="Spiderman is a good man"
-# s=(input("enter str:"))
-# s2=s.split( )
-# s3=""
-# for i in s2:
-#     s1=i[::-1]
-#     s3=s3+s1+" "                                      #reversing the strings in the sentences
-# print(s3)
+s="Spiderman is a good man"
+s=(input("enter str:"))
+s2=s.split( )
+s3=""
+for i in s2:
+    s1=i[::-1]
+    s3=s3+s1+" "                                      #reversing the strings in the sentences
+print(s3)
 
 
 
