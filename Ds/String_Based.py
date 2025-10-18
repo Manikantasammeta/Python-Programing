@@ -132,17 +132,17 @@
 
 
 
-# s="ManiKanta"
-# s2=""
-# for i in s:
-#     if "A"<=i<="Z":
-#         s2+=chr(ord(i)+32)                                                #swapcase 
-#     elif "a"<=i<="z":
-#         s2+=chr(ord(i)-32)
-#     else:
-#         s2+=i
+s="ManiKanta"
+s2=""
+for i in s:
+    if "A"<=i<="Z":
+        s2+=chr(ord(i)+32)                                                #swapcase 
+    elif "a"<=i<="z":
+        s2+=chr(ord(i)-32)
+    else:
+        s2+=i
         
-# print(s2)
+print(s2)
 
 
 # mANIkANTA
