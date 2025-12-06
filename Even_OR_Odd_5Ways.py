@@ -16,6 +16,7 @@ if (n//2)*n==n:
     print("Even")
 else:
     print("Odd")
+ 
     
 # with using " % " and " == " operator
 if n//2*2 is n:
