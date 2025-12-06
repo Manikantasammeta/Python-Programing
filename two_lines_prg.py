@@ -20,6 +20,7 @@ from groq import Groq
 import json
 
 
+
 def evaluate_resume(resume_text, job_description):
     """
     Evaluates a candidate resume against a Job Description (JD)
