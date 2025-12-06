@@ -24,6 +24,8 @@
 
 
 
+
+
 # def Fun(n,i=2):
 #     if n%i==0 :
 #         return True                     #  checking prime number
