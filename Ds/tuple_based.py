@@ -5,3 +5,5 @@ p=10
 for i in t:
     s=(s*p)+i
 print(s)
+
+
