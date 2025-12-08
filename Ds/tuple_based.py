@@ -7,3 +7,5 @@ for i in t:
 print(s)
 
 
+
+
