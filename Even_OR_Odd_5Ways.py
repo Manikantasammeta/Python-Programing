@@ -10,6 +10,8 @@ if n%2:
     print("Odd")
 else:
     print("Even")
+ 
+ 
     
 # without using " % " operator
 if (n//2)*n==n:
