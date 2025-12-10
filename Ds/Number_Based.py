@@ -10,6 +10,7 @@
 
 
 
+
 # n:5
 # 5
 # it is a Automorphic numbe
