@@ -35,6 +35,8 @@ for i in range(n):
 
 
 
+
+
 # n:9
 # A   a   Z   y   X   w   V   u   T   
 # T   s   R   q   P   o   N   m   L   
