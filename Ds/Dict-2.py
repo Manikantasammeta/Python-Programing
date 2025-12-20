@@ -57,6 +57,8 @@
     
     
     
+    
+    
 #     def display(self):
 #         print("-"*85)
 #         print(f"""Name          MATH            PHT             ENG             CHE             TOTAL""")
