@@ -206,109 +206,100 @@
 import json
 import os
 from groq import Groq   # or any LLM client you use
-
-client = Groq(api_key=os.environ.get('GROQ_API_KEY'))
-
-
-def generate_interview_blueprint(
-    parsed_jd: dict,
-    mandatory_questions: list | None,
-    total_questions: int | None
-) -> dict:
-    """
-    Creates ONE interview blueprint per JD using LLM.
-    """
-
+def generate_interview_blueprint(parsed_jd: dict,mandatory_questions: list | None,total_questions: int | None) -> dict:
+    """Creates ONE interview blueprint per JD using LLM."""
+    client = Groq(api_key="")
     system_prompt = """
-You are an expert technical interviewer and hiring manager.
+        You are an expert technical interviewer and hiring manager.
+        Do not include explanations, markdown, or text outside JSON.
+        If HR questions are not provided, do not generate HR sections.
+        Do not assume missing inputs unless explicitly instructed.
 
-Your task is to create ONE interview blueprint.
+        Your task is to create ONE interview blueprint.
 
-CRITICAL CONSTRUCTION RULES (MUST FOLLOW EXACTLY) and creaate no of Blue-print Questions or topic based on input:
+        CRITICAL CONSTRUCTION RULES (MUST FOLLOW EXACTLY) and creaate no of Blue-print Questions or topic based on input:
 
-The number of blueprint items must be created strictly based on the input provided.
+        The number of blueprint items must be created strictly based on the input provided.
 
-PHASE 1: SELF INTRODUCTION
-- The first item is always:
-  - order = 1
-  - type = "self_intro"
+        PHASE 1: SELF INTRODUCTION
+        - The first item is always:
+        - order = 1
+        - type = "self_intro"
 
-PHASE 2: HR MANDATORY QUESTIONS
-- If HR mandatory questions are provided:
-  - Add ALL HR questions immediately after self_intro
-  - HR questions MUST appear contiguously
-  - HR questions MUST NOT appear after any technical question
-  - Do NOT change the question text
-  - Do NOT change their order
-  - Do NOT merge, move, or rewrite HR questions
-- Each HR question must be a separate item
-- HR questions are same for all students
+        PHASE 2: HR MANDATORY QUESTIONS
+        - If HR mandatory questions are provided:
+        - Add ALL HR questions immediately after self_intro
+        - HR questions MUST appear contiguously
+        - HR questions MUST NOT appear after any technical question
+        - Do NOT change the question text
+        - Do NOT change their order
+        - Do NOT merge, move, or rewrite HR questions
+        - Each HR question must be a separate item
+        - HR questions are same for all students
 
-PHASE 3: TECHNICAL QUESTIONS (TOPICS ONLY)
-- Add ONLY technical items after ALL HR questions
-- Technical items must be:
-  - Derived strictly from the Job Description
-  - Theoretical only (NO coding)
-  - Difficulty must always be "medium"
-- Prioritize core role skills over cross-domain awareness skills
+        PHASE 3: TECHNICAL QUESTIONS (TOPICS ONLY)
+        - Add ONLY technical items after ALL HR questions
+        - Technical items must be:
+        - Derived strictly from the Job Description
+        - Theoretical only (NO coding)
+        - Difficulty must always be "medium"
+        - Prioritize core role skills over cross-domain awareness skills
 
-COUNT & LIMIT RULES (VERY IMPORTANT)
---------------------------------------------------
-
-- Total questions =
-  1 (self_intro)
-  + number_of_hr_questions
-  + number_of_technical_questions
-
-- NEVER exceed the total_questions value provided
-- HR questions can NEVER be removed, even if slots are limited
-
-COUNT RULES:
-
-- Total questions = 1 (self_intro) + number_of_hr_questions + number_of_technical_questions
-- NEVER exceed the total_questions provided.
-- If slots are limited, MERGE technical skills.
-- NEVER remove or relocate HR questions.
-
-STRICT OUTPUT RULES:
-- Output ONLY valid JSON
-- No explanations
-- No comments
-- No extra keys
-- Order values must be continuous (1,2,3,4...)
-
-NOTE : generate the number od Question based on user input like  number of Questiond wanted 
-Exception:
-- HR mandatory questions MUST include the exact question text provided by HR.
-
-Respond in this JSON format:
-{
-  "blueprint_name": "<STRING: Company + Role + Interview Blueprint>",
-
-  "structure": [
-    {
-      "order": sno,
-      "type": "self_intro"
-    },
-
+        COUNT & LIMIT RULES (VERY IMPORTANT)
     
 
-    {
-      "order": sno,
-      "type": "technical",
-      "topic": "<CORE SKILL / SUBJECT>",
-      "difficulty": "medium"
-    },
+        - Total questions =
+        1 (self_intro)
+        + number_of_hr_questions
+        + number_of_technical_questions
 
-    {
-      "order": sno,
-      "type": "technical",
-      "topic": "<CORE SKILL / SUBJECT>",
-      "difficulty": "medium"
-    },
+        - NEVER exceed the total_questions value provided
+        - HR questions can NEVER be removed, even if slots are limited
+
+        COUNT RULES:
+
+        - Total questions = 1 (self_intro) + number_of_hr_questions + number_of_technical_questions
+        - NEVER exceed the total_questions provided.
+        - If slots are limited, MERGE technical skills.
+        - NEVER remove or relocate HR questions.
+
+        STRICT OUTPUT RULES:
+        - Output ONLY valid JSON
+        - No explanations
+        - No comments
+        - No extra keys
+        - Order values must be continuous (1,2,3,4...)
+
+        NOTE : generate the number od Question based on user input like  number of Questiond wanted 
+        Exception:
+        - HR mandatory questions MUST include the exact question text provided by HR.
+
+        Respond in this JSON format:
+        {
+        "blueprint_name": "<STRING: Company + Role + Interview Blueprint>",
+
+        "structure": [
+            {
+            "order": sno,
+            "type": "self_intro"
+            },
+            
+            {
+            "order": sno,
+            "type": "technical",
+            "topic": "<CORE SKILL / SUBJECT>",
+            "difficulty": "medium"
+            },
+
+            {
+            "order": sno,
+            "type": "technical",
+            "topic": "<CORE SKILL / SUBJECT>",
+            "difficulty": "medium"
+            },
 
 
-"""
+        """
 
     user_prompt = {
         "parsed_job_description": parsed_jd,
@@ -326,19 +317,20 @@ Respond in this JSON format:
     )
 
 
-    blueprint = json.loads(response.choices[0].message.content)
+    blueprint = response.choices[0].message.content
     return blueprint
-mandatory_questions = [
-    "Explain your experience with Git workflows",
-    "Have you worked on any CI/CD pipelines?"
-]
+
+
+
+  
+mandatory_questions = []
 
 
 parsed_jd ={
   "company_name": "Upward IQ Solutions",
    "client_name": "Oracle",
    "job_title_or_role": ' ',
-   "technical_skills": ["React Js",'Python',"django","Mysql","html",'css','js','bootstrap','restapi'],
+   "technical_skills": ["React Js","django","Mysql","html",'css','js','bootstrap','restapi','python'],
    "soft_skills": ' ',
    "experience_required": ' ',
    "job_type": ' ',
@@ -376,7 +368,7 @@ parsed_jd ={
 blueprint = generate_interview_blueprint(
     parsed_jd=parsed_jd,
     mandatory_questions=mandatory_questions,
-    total_questions=7
+    total_questions=5
 )
 
 print(json.dumps(blueprint, indent=2))
