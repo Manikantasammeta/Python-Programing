@@ -17,3 +17,4 @@ it=iter(input_list)
 
 print(dir(it))
 print(len(input_list))
+
