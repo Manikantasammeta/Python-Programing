@@ -2,21 +2,6 @@
 #                THE RESPECTIVE OUTPUT WILL BE DISPLAYED AT THE BOTTOM OF THE CODE. CHECK IT ONCE.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # s=input("Enter srt :")
 # i=int(input("No :"))
 # g=[]
