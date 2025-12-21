@@ -23,6 +23,8 @@
 
 
 
+
+
 s=input("Enter Str :")
 Captial_letters=[]
 Small_Letters=[]
