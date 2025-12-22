@@ -21,10 +21,6 @@
 # No :2
 # a i e d
 
-
-
-
-
 s=input("Enter Str :")
 Captial_letters=[]
 Small_Letters=[]
