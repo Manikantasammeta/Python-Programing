@@ -212,7 +212,7 @@ def generate_interview_blueprint(parsed_jd: dict,mandatory_questions: list | Non
     system_prompt = """
         You are an expert technical interviewer and hiring manager.
         Do not include explanations, markdown, or text outside JSON.
-        If HR questions are not provided, do not generate HR sections.
+        If MANDATORY questions are not provided, do not generate MANDATORY sections.
         Do not assume missing inputs unless explicitly instructed.
 
         Your task is to create ONE interview blueprint.
@@ -226,19 +226,19 @@ def generate_interview_blueprint(parsed_jd: dict,mandatory_questions: list | Non
         - order = 1
         - type = "self_intro"
 
-        PHASE 2: HR MANDATORY QUESTIONS
-        - If HR mandatory questions are provided:
-        - Add ALL HR questions immediately after self_intro
-        - HR questions MUST appear contiguously
-        - HR questions MUST NOT appear after any technical question
+        PHASE 2:  MANDATORY QUESTIONS if any Questions else skip and go with  TECHNICAL QUESTIONS (TOPICS ONLY).
+        - If mandatory questions are provided:
+        - Add ALL questions immediately after self_intro
+        -  MANDATORY questions MUST appear contiguously
+        - MANDATORY questions MUST NOT appear after any technical question
         - Do NOT change the question text
         - Do NOT change their order
-        - Do NOT merge, move, or rewrite HR questions
-        - Each HR question must be a separate item
-        - HR questions are same for all students
+        - Do NOT merge, move, or rewrite MANDATORY questions
+        - Each MANDATORY question must be a separate item
+        - MANDATORY questions are same for all students
 
         PHASE 3: TECHNICAL QUESTIONS (TOPICS ONLY)
-        - Add ONLY technical items after ALL HR questions
+        - Add ONLY technical items after ALL MANDATORY questions
         - Technical items must be:
         - Derived strictly from the Job Description
         - Theoretical only (NO coding)
@@ -250,18 +250,18 @@ def generate_interview_blueprint(parsed_jd: dict,mandatory_questions: list | Non
 
         - Total questions =
         1 (self_intro)
-        + number_of_hr_questions
+        + number_of_MANDATORY_questions
         + number_of_technical_questions
 
         - NEVER exceed the total_questions value provided
-        - HR questions can NEVER be removed, even if slots are limited
+        - MANDATORY questions can NEVER be removed, even if slots are limited
 
         COUNT RULES:
 
-        - Total questions = 1 (self_intro) + number_of_hr_questions + number_of_technical_questions
+        - Total questions = 1 (self_intro) + number_of_MANDATORY_questions + number_of_technical_questions
         - NEVER exceed the total_questions provided.
         - If slots are limited, MERGE technical skills.
-        - NEVER remove or relocate HR questions.
+        - NEVER remove or relocate MANDATORY questions.
 
         STRICT OUTPUT RULES:
         - Output ONLY valid JSON
@@ -272,7 +272,7 @@ def generate_interview_blueprint(parsed_jd: dict,mandatory_questions: list | Non
 
         NOTE : generate the number od Question based on user input like  number of Questiond wanted 
         Exception:
-        - HR mandatory questions MUST include the exact question text provided by HR.
+        - Mandatory questions MUST include the exact question text provided by the user.
 
         Respond in this JSON format:
         {
@@ -317,13 +317,13 @@ def generate_interview_blueprint(parsed_jd: dict,mandatory_questions: list | Non
     )
 
 
-    blueprint = response.choices[0].message.content
+    blueprint = json.loads( response.choices[0].message.content)
     return blueprint
 
 
 
   
-mandatory_questions = []
+mandatory_questions = ['python']
 
 
 parsed_jd ={
@@ -368,7 +368,7 @@ parsed_jd ={
 blueprint = generate_interview_blueprint(
     parsed_jd=parsed_jd,
     mandatory_questions=mandatory_questions,
-    total_questions=5
+    total_questions=7
 )
 
 print(json.dumps(blueprint, indent=2))
