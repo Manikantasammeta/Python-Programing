@@ -410,6 +410,7 @@ for i in range(len(s)):
     c+=1
 
 # print(s1)
+   
     
 # enter stringmanikantareddy 
 # enter range:5
