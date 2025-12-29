@@ -15,11 +15,6 @@
 #        l=[rm.randint(1,100) for i in range(m)]
 #        print(l)
 
-
-
-
-
-
 # l=list()
 # l.li(5)
 
