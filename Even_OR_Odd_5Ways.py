@@ -11,21 +11,6 @@ if n%2:
 else:
     print("Even")
  
- 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
- 
- 
-  
-  
   
     
 # without using " % " operator
