@@ -38,15 +38,6 @@ for i in range(n):
 # X   w   V   u   T   s   R   q   P   
 # P   o   N   m   L   k   J   i   H 
 
-
-
-
-
-
-
-
-
-
 # n=int(input("n :"))
 # val=ord("A")
 # for i in range(n):
