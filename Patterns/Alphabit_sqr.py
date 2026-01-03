@@ -730,6 +730,8 @@ for i in range(n):
 #     val=ord("A")      
 
 
+
+
 #         1         
 #       A B A       
 #     1 2 3 2 1     
